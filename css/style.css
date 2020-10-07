@@ -1,0 +1,275 @@
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+
+  overflow: hidden;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (min--moz-device-pixel-ratio: 2),
+only screen and (-o-min-device-pixel-ratio: 2/1),
+only screen and (min-device-pixel-ratio: 2),
+only screen and (min-resolution: 192dpi),
+only screen and (min-resolution: 2dppx) {}
+
+
+
+.container {
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 50px 30px 80px;
+}
+
+.header_conteiner {
+  display: flex;
+  align-items: center;
+}
+
+.apple {
+  text-decoration: none;
+  color: black;
+  font-size: 40px;
+  margin-right: auto;
+}
+
+.sitemenu {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.sitemenu_item {
+  margin-right: 25px;
+}
+
+.sitemenu_link {
+  text-decoration: none;
+  color: rgb(0, 0, 0, 0.5);
+  padding: 15px 0px;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.sitemenu_link::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 3px;
+  position: absolute;
+  bottom: 0%;
+  left: 0%;
+  background-color: transparent;
+  transition: background-color 0.3s ease;
+}
+
+.sitemenu_link:hover::after {
+  background-color: black;
+}
+
+.sitemenu_link:hover {
+  color: #000;
+}
+
+.input-search {
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  padding: 5px 0px;
+  letter-spacing: -0.3px;
+  width: 20%;
+  display: inline-block;
+  border-bottom: 1px solid rgb(0, 0, 0, 0.5);
+}
+
+.input-search:focus {
+  outline: 0;
+}
+
+.freedom {
+  background-image: url("../img/watches.jpg");
+  background-repeat: no-repeat;
+  background-size: 35%;
+  padding: 130px 0 0 0;
+  margin-top: -160px;
+  background-position: right -23% bottom 0;
+
+}
+
+.freedom_info {
+  width: 480px;
+}
+
+.freedom_title {
+  font-size: 48px;
+  padding: 0;
+  font-weight: 800;
+  text-transform: capitalize;
+
+}
+
+.freedom_sub_title {
+  border-left: 2px solid rgb(0, 0, 0, 0.5);
+  padding-left: 40px;
+  margin-bottom: 50px;
+  /* opacity: 0.5; */
+  color: rgb(0, 0, 0, 0.5);
+}
+
+.freedom_link {
+  padding: 8px 20px;
+  display: inline-block;
+  vertical-align: baseline;
+  text-decoration: none;
+  color: #fff;
+  background-color: #ea625c;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: uppercase;
+  border: 2px solid transparent;
+}
+
+.freedom_link:hover {
+  color: #ea625c;
+  background-color: #fff;
+  border: 2px solid #ea625c;
+}
+
+.line {
+  margin: 0;
+  padding: 0;
+  border: none;
+  width: 100%;
+  height: 1px;
+  background-color: rgb(0, 0, 0, 0.5);
+}
+
+.information {
+  padding: 30px 0px 60px 0px;
+}
+
+
+.info_menu {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.info_item {
+  width: 380px;
+  padding: 0;
+  margin-right: 30px;
+}
+
+.info_item:last-child {
+  margin-right: 0;
+}
+
+.info_title {
+  text-transform: uppercase;
+  font-weight: 800;
+  margin: 0;
+  margin-bottom: 30px;
+  padding: 0;
+  font-size: 15px;
+}
+
+.info_text {
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.learn_more {
+  font-size: 14px;
+  text-decoration: none;
+  color: #ea625c;
+  display: inline-block;
+  font-weight: 600;
+  padding: 7px;
+  display: flex;
+  align-items: center;
+}
+
+.learn_more::before {
+  width: 40px;
+  content: "";
+  display: block;
+  height: 3px;
+  border-radius: 5px;
+  margin-right: 10px;
+  background-color: #ea625c;
+  transform-origin: left;
+  transition: transform 0.5s ease, margin-right 0.5s ease
+}
+
+.learn_more:hover::before {
+  transform: scaleX(1.3);
+  margin-right: 23px;
+}
+
+.cap {
+  text-transform: capitalize;
+  font-size: 48px;
+  padding: 0;
+  font-weight: 800;
+  color: #fff;
+}
+
+.sport-container {
+  background-image: url("../img/preview.jpg");
+  background-repeat: no-repeat;
+  background-size: 400px 600px;
+  background-position: 100% 100%;
+  margin-bottom: 60px;
+}
+
+.footr {
+  background-image: url("../img/runners.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  height: 100vh;
+}
+
+.color {
+  border-left: 2px solid #faf7f7;
+  padding-left: 40px;
+  margin-bottom: 50px;
+  /* opacity: 0.5; */
+  color: #faf5f5;
+}
+
+.footer_text {
+  width: 480px;
+  margin-left: auto;
+}
